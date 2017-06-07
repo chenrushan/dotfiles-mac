@@ -22,6 +22,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'scrooloose/nerdtree'
 Plug 'easymotion/vim-easymotion'
+Plug 'rakr/vim-one'
 call plug#end()
 
 let mapleader=","
@@ -43,7 +44,10 @@ let g:airline_powerline_fonts = 0
 " good candidates 'laederon', 'lucius', 'understated', 'wombat', 'bubblegum', 'badwolf'
 " 'bubblegum' is good for green scheme
 " 'lucius' is good for black scheme
-let g:airline_theme = 'laederon'
+" let g:airline_theme = 'laederon'
+let g:airline_theme = 'one'
+
+let g:one_allow_italics = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -84,7 +88,9 @@ let g:NERDTreeWinSize=20
 
 " ============================================================
 
-colorscheme molokai
+"colorscheme molokai
+colorscheme one
+set background=light
 hi Normal ctermfg=254 ctermbg=none
 
 "colorscheme monokai
