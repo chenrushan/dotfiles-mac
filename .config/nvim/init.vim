@@ -88,10 +88,8 @@ let g:NERDTreeWinSize=20
 
 " ============================================================
 
-"colorscheme molokai
 colorscheme one
 set background=light
-hi Normal ctermfg=254 ctermbg=none
 
 "colorscheme monokai
 "hi Normal ctermfg=254 ctermbg=none
