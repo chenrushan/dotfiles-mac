@@ -69,7 +69,7 @@ alias gst='git stash'
 alias l='ls -l'
 alias ll='ls -al'
 alias rm='/bin/rm'
-if [[ -f /usr/bin/nvim ]]; then
+if [[ -f /usr/local/bin/nvim ]]; then
     alias vim=nvim
     alias v=nvim
 else
