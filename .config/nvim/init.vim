@@ -153,10 +153,10 @@ set autochdir
 " set a mark on column 80
 set colorcolumn=80
 
-inoremap " ""<left>
-inoremap [ []<left>
-inoremap ( ()<left>
-inoremap { {}<left>
+" inoremap " ""<left>
+" inoremap [ []<left>
+" inoremap ( ()<left>
+" inoremap { {}<left>
 imap <C-l> <esc><C-l>zza
 inoremap <C-e> <end>
 inoremap <C-b> <left>
