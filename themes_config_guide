@@ -1,0 +1,4 @@
+1. iterm: https://iterm2colorschemes.com/ search Lab Fox
+2. tmux: https://github.com/catppuccin/tmux
+	* go into iTerm preferences and untick the indicators: Profiles > Terminal > Show mark indicators.
+3. zsh: 
