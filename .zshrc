@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/opt/homebrew/bin/
+export PATH=/opt/homebrew/bin/:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,12 +70,8 @@ alias gst='git stash'
 alias l='ls -l'
 alias ll='ls -al'
 alias rm='/bin/rm'
-if [[ -f /usr/local/bin/nvim ]]; then
-    alias vim=nvim
-    alias v=nvim
-else
-    alias v=vim
-fi
+alias vim=nvim
+alias v=nvim
 
 # User configuration
 
@@ -105,3 +101,5 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias proxy='export https_proxy=http://127.0.0.1:8118;export http_proxy=http://127.0.0.1:8118'

@@ -1,4 +1,6 @@
 1. iterm: https://iterm2colorschemes.com/ search Lab Fox
-2. tmux: https://github.com/catppuccin/tmux
 	* go into iTerm preferences and untick the indicators: Profiles > Terminal > Show mark indicators.
-3. zsh: 
+    * font: https://www.nerdfonts.com/font-downloads
+        - check: JetBrainsMono
+        - check install instruction at the end of the page
+2. tmux: https://github.com/catppuccin/tmux
