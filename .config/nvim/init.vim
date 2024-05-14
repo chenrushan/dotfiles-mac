@@ -22,7 +22,14 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'scrooloose/nerdtree'
 Plug 'easymotion/vim-easymotion'
+
+
+" multiple colorschemes
 Plug 'rakr/vim-one'
+Plug 'jacoborus/tender.vim'
+Plug 'scottmckendry/cyberdream.nvim'
+Plug 'folke/tokyonight.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 call plug#end()
 
 let mapleader=","
@@ -57,9 +64,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-q>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-call unite#custom#source('file,file/new,buffer,file_rec,line', 'matchers', 'matcher_fuzzy')
+" call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" call unite#filters#sorter_default#use(['sorter_rank'])
+" call unite#custom#source('file,file/new,buffer,file_rec,line', 'matchers', 'matcher_fuzzy')
 nnoremap <leader>z :<C-u>Unite -buffer-name=search -start-insert line<cr>
 nnoremap <leader>f :UniteWithProjectDir -start-insert file_rec/async<CR>
 
@@ -88,11 +95,8 @@ let g:NERDTreeWinSize=20
 
 " ============================================================
 
-colorscheme one
-set background=light
-
-"colorscheme monokai
-"hi Normal ctermfg=254 ctermbg=none
+colorscheme catppuccin-latte
+hi Normal ctermbg=none
 
 au FileType c,cpp,java setlocal cindent
 au FileType tex,plaintex setlocal shiftwidth=2 tabstop=2
@@ -102,7 +106,7 @@ au FileType lua setlocal shiftwidth=3 tabstop=3
 au FileType vim setlocal shiftwidth=2 tabstop=2
 au FileType javascript setlocal shiftwidth=2 tabstop=2
 au BufNewFile,BufRead *.md setlocal filetype=markdown
-au VimEnter * NERDTree
+" au VimEnter * NERDTree
 " jump to the main window instead of staying in NERDTree window
 au VimEnter * wincmd p
 " au BufEnter * NERDTreeFind<cr><C-w><C-w>
@@ -151,7 +155,7 @@ set number
 set autochdir
 
 " set a mark on column 80
-set colorcolumn=80
+" set colorcolumn=80
 
 " inoremap " ""<left>
 " inoremap [ []<left>
