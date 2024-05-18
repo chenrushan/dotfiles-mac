@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/opt/homebrew/bin/:$PATH
+export PATH=/opt/homebrew/bin/:$PATH:$HOME/msp430/msp430-gcc-9.3.1.11_macos/bin/
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -72,6 +72,7 @@ alias ll='ls -al'
 alias rm='/bin/rm'
 alias vim=nvim
 alias v=nvim
+alias cat=bat
 
 # User configuration
 
@@ -103,3 +104,5 @@ alias v=nvim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias proxy='export https_proxy=http://127.0.0.1:8118;export http_proxy=http://127.0.0.1:8118'
+
+source <(fzf --zsh)
