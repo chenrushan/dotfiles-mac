@@ -3,5 +3,12 @@
     * font: https://www.nerdfonts.com/font-downloads
         - check: JetBrainsMono
         - check install instruction at the end of the page
-2. tmux: https://github.com/catppuccin/tmux
+2. tmux:
+    * https://github.com/wfxr/tmux-power ('moon')
+    * https://github.com/catppuccin/tmux
+
+    Install plugin for tmux:
+    1. git clone git@github.com:tmux-plugins/tmux-sensible.git ~/.tmux/plugins/tmux-sensible
+    2. tmux source-file ~/.tmux.conf
+
 3. zsh: https://github.com/romkatv/powerlevel10k
