@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/homebrew/bin/:$PATH:$HOME/msp430/msp430-gcc-9.3.1.11_macos/bin/
@@ -8,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +63,7 @@ plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-# 用 CTRL-P 往前搜索以一段字符串开头的命令
+# Ã§ÂÂ¨ CTRL-P Ã¥Â¾ÂÃ¥ÂÂÃ¦ÂÂÃ§Â´Â¢Ã¤Â»Â¥Ã¤Â¸ÂÃ¦Â®ÂµÃ¥Â­ÂÃ§Â¬Â¦Ã¤Â¸Â²Ã¥Â¼ÂÃ¥Â¤Â´Ã§ÂÂÃ¥ÂÂ½Ã¤Â»Â¤
 bindkey '^p' history-search-backward
 bindkey '^e' vi-add-eol
 bindkey '^b' backward-char
@@ -106,3 +113,6 @@ alias cat=bat
 alias proxy='export https_proxy=http://127.0.0.1:8118;export http_proxy=http://127.0.0.1:8118'
 
 source <(fzf --zsh)
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

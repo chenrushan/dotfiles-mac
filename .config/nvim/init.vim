@@ -31,6 +31,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'scottmckendry/cyberdream.nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'tribela/vim-transparent'
 call plug#end()
 
 let mapleader=","
@@ -73,7 +74,7 @@ let g:NERDTreeWinSize=20
 
 " ============================================================
 
-colorscheme catppuccin-latte
+colorscheme catppuccin-macchiato
 hi Normal ctermbg=none
 
 au FileType c,cpp,java setlocal cindent

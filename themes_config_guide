@@ -4,3 +4,4 @@
         - check: JetBrainsMono
         - check install instruction at the end of the page
 2. tmux: https://github.com/catppuccin/tmux
+3. zsh: https://github.com/romkatv/powerlevel10k
