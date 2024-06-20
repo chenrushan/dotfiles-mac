@@ -38,12 +38,12 @@ let mapleader=","
 
 " airline config
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 " good candidates 'laederon', 'lucius', 'understated', 'wombat', 'bubblegum', 'badwolf'
 " 'bubblegum' is good for green scheme
 " 'lucius' is good for black scheme
-" let g:airline_theme = 'laederon'
-let g:airline_theme = 'one'
+let g:airline_theme = 'lucius'
+" let g:airline_theme = 'one'
 
 let g:one_allow_italics = 1
 
